@@ -1,6 +1,6 @@
 class Array
   def each_with_status(options = {}, &block)
-    update_interval = options[:update_every] || 100
+    update_interval = options[:update_every] || 1
     start = Time.now
     each_with_index do |element,index|
       block.call(element)
